@@ -1,0 +1,23 @@
+settings:
+  legacy:
+    force: true
+    interval: 0s
+schema:
+- name: go-production-boilerplate
+  path: .
+  commands:
+    build:
+      status: true
+      method: go build -o /go-production-boilerplate
+    run:
+      status: true
+      method: /go-production-boilerplate
+  watcher:
+    extensions:
+    - go
+    paths:
+    - /
+    ignored_paths:
+    - .git
+    - .realize
+    - vendor

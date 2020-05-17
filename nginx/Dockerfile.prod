@@ -1,0 +1,21 @@
+# FROM nginx:latest
+FROM nginx:1.18.0-alpine
+
+ENV TZ Asia/Tokyo
+ENV LETSENCRYPT_HOSTS www.go-production-boilerplate.com
+ENV LETSENCRYPT_MAIL bmf.infomation@gmail.com
+ENV LETSENCRYPT_SUBJECT "/C=JP/ST=Tokyo/L=Shinagawa/CN=default"
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apk update \
+    && apk add \
+    openssl \
+    certbot \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY ./conf/nginx.prod.conf /etc/nginx/nginx.conf
+COPY start.sh /start.sh
+
+RUN chmod +x /start.sh
+
+CMD /start.sh

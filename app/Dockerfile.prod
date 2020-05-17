@@ -1,0 +1,12 @@
+FROM golang:1.13.0-alpine
+
+ENV TZ Asia/Tokyo
+
+RUN apk update && \
+  apk upgrade && \
+  apk add --no-cache libc-dev gcc git openssh openssl bash && \
+  go get -u golang.org/x/lint/golint
+
+WORKDIR /go/src/app
+
+COPY . .

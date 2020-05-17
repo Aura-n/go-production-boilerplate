@@ -1,0 +1,5 @@
+github.com/bmf-san/go-production-boilerplate v0.0.0-20200517051527-b7201f0dcd09 h1:N1Z589dl+s0F4jAqPDZ2f/9eAq/+Snai/05f6sUzafA=
+github.com/bmf-san/goblin v0.0.0-20200106155859-2417d6230563 h1:q6RJ64c3iftpB9Xlk1WckcbWCUkrZ/kzy9rngIb043c=
+github.com/bmf-san/goblin v0.0.0-20200106155859-2417d6230563/go.mod h1:qXZgUT0V3TiFV043L16JFLw4gV2s0uaSFUEnW3TRMmQ=
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

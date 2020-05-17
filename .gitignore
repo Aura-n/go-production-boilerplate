@@ -1,0 +1,13 @@
+.DS_STORE
+
+# common
+.env
+
+# app
+/app/go-production-boilerplate
+/app/log/*
+!/app/log/.gitkeep
+
+# editor
+.vscode/
+launch.json
